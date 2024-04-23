@@ -1,0 +1,15 @@
+[Unit]
+Description=Stream frambebuffer via HTTP
+Wants=fbsgpsclock.service
+After=fbsgpsclock.service
+
+[Service]
+Type=notify
+PIDFile=fbstream.pid
+User=root
+ExecStart=/usr/local/bin/fbstream.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

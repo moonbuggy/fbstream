@@ -1,0 +1,4 @@
+cheroot==10.0.1
+bottle==0.12.25
+numpy==1.26.4
+sdnotify==0.3.2
